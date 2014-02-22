@@ -10,7 +10,7 @@
 
 License: MIT
 
-[See usage example in JSFiddle](http://jsfiddle.net/D6yb8/1/)
+[See usage example in JSFiddle](http://jsfiddle.net/D6yb8/2/)
 
 ##Usage
 
