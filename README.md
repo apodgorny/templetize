@@ -10,6 +10,8 @@
 
 License: MIT
 
+[See usage example in JSFiddle](http://jsfiddle.net/D6yb8/1/)
+
 ##Usage
 
 1. Create a data object:
