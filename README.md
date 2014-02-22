@@ -33,7 +33,7 @@ License: MIT
 
 2a. Alternatively, you can use pre-defined or your own macros:
 
-```javascript
+```html
 <b>I have <?= this.things.length ?> different <?=this.item_name?>s:</b>
 <ul>
 	<? FOR var n=0; n<this.things.length; n++ : ?>
