@@ -70,7 +70,8 @@ Contemplate.macro(\^dostuff\, function(sExpression) {
 
 This will find anything looking like `<?dostuff my code?>` and evaluate javascript outputted by `dostuff()`
 
-Enjoy! And ditch that dust!
+Enjoy!
+Respectfully, Lex Podgorny
 
 
 
