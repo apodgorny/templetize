@@ -116,7 +116,9 @@ Contemplate.macro(/^ENDFOR/, function(sExpression) {
 /*****************************************************
 NOTE: Remove the following line if using on client side
 /*****************************************************/
-module.exports = Contemplate;
+if (module) {
+	module.exports = Contemplate; // Nodejs only
+}
 
 
 
