@@ -25,19 +25,28 @@ License: MIT
 ```html
 <b>I have <?= this.things.length ?> different <?=this.item_name?>s:</b>
 <ul>
+	<? for (var n=0; n<this.things.length; n++) { ?>
+		<li><?= n+1 ?>) <?= this.things[n]; ?></li>
+	<? } ?>
+</ul>
+```
+
+2a. Alternatively, you can use pre-defined or your own macros:
+
+<b>I have <?= this.things.length ?> different <?=this.item_name?>s:</b>
+<ul>
 	<? FOR var n=0; n<this.things.length; n++ : ?>
 		<li><?= n+1 ?>) <?= this.things[n]; ?></li>
 	<? ENDFOR; ?>
 </ul>
-```
 
-2. Render template
+3. Render template
 
 ```javascript
  Contemplate.render(sTemplate, oData);
 ```
 
-3. Display result:
+4. Display result:
 
 ```html
 <b>I have 7 different items:</b>
@@ -60,7 +69,7 @@ License: MIT
 </ul>
 ```
 
-4. [Optional] Create your own macro
+5. [Optional] Create your own macro
 
 ```javascript
 Contemplate.macro(\^dostuff\, function(sExpression) {
