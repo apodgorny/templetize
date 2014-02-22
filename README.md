@@ -10,6 +10,10 @@
 
 License: MIT
 
+##Installation
+
+`npm install templetize`
+
 [See usage example in JSFiddle](http://jsfiddle.net/D6yb8/2/)
 
 ##Usage
