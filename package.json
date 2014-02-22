@@ -1,13 +1,18 @@
 {
-  "name": "Contemplate",
-  "description": "Nodejs templating engine",
-  "version": "1.0",
+  "name": "templetize",
+  "description": "Consise, full-featured, extensible and fast nodejs templating engine",
+  "version": "0.1.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:apodgorny/templetize.git"
+  },
   "author": {
     "name": "Lex Podgorny",
-    "email": "ap.public1@gmail.com"
+    "email": "alexander.podgorny@gmail.com"
   },
   "engines": {
     "node": ">= 0.6.13"
   },
-  "main": "./Contemplate.js"
+  "main": "./Templetize.js",
+  "readmeFilename": "README.md"
 }

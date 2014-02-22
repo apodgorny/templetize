@@ -1,4 +1,4 @@
-#Contemplate.js
+#Templetize.js
 
 ###Complete javascript templating solution
 
@@ -48,7 +48,7 @@ License: MIT
 3. Render template
 
 ```javascript
- Contemplate.render(sTemplate, oData);
+ Templetize.render(sTemplate, oData);
 ```
 
 4. Display result:
@@ -77,7 +77,7 @@ License: MIT
 5. [Optional] Create your own macro
 
 ```javascript
-Contemplate.macro(\^dostuff\, function(sExpression) {
+Templetize.macro(\^dostuff\, function(sExpression) {
 	return dostuff(sExpression);
 }); 
 ```
