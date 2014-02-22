@@ -6,6 +6,7 @@
 - No syntax limitations
 - Extensible syntax with user-defined macros
 - Running at native speeds (browser or nodejs)
+- The entire thing is ~40 lines of code! You can safely slab it onto a webpage ))
 
 License: MIT
 
