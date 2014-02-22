@@ -1,0 +1,13 @@
+{
+  "name": "Contemplate",
+  "description": "Nodejs templating engine",
+  "version": "1.0",
+  "author": {
+    "name": "Lex Podgorny",
+    "email": "ap.public1@gmail.com"
+  },
+  "engines": {
+    "node": ">= 0.6.13"
+  },
+  "main": "./Contemplate.js"
+}

@@ -1,4 +1,77 @@
-contemplate
-===========
+#Contemplate.js
 
-Complete javascript templating solution
+###Complete javascript templating solution
+
+- Works equally well on server and on client side
+- No syntax limitations
+- Extensible syntax with user-defined macros
+- Running at native speeds (browser or nodejs)
+
+License: MIT
+
+##Usage
+
+1. Create a data object:
+
+```javascript
+{
+	item_name  : "item",
+	things     : ["shoe","another shoe","hat","pants","cup","shirt","laptop"]
+}
+```
+
+2. Refer to the data object as "this" within template using full javascript syntax and/or additional macro syntax:
+
+```html
+<b>I have <?= this.things.length ?> different <?=this.item_name?>s:</b>
+<ul>
+	<? FOR var n=0; n<this.things.length; n++ : ?>
+		<li><?= n+1 ?>) <?= this.things[n]; ?></li>
+	<? ENDFOR; ?>
+</ul>
+```
+
+2. Render template
+
+```javascript
+ Contemplate.render(sTemplate, oData);
+```
+
+3. Display result:
+
+```html
+<b>I have 7 different items:</b>
+<ul>
+	
+		<li>1) shoe</li>
+	
+		<li>2) another shoe</li>
+	
+		<li>3) hat</li>
+	
+		<li>4) pants</li>
+	
+		<li>5) cup</li>
+	
+		<li>6) shirt</li>
+	
+		<li>7) laptop</li>
+	
+</ul>
+```
+
+4. [Optional] Create your own macro
+
+```javascript
+Contemplate.macro(\^dostuff\, function(sExpression) {
+	return dostuff(sExpression);
+}); 
+```
+
+This will find anything looking like `<?dostuff my code?> and evaluate javascript outputted by `dostuff()`
+
+Enjoy! And ditch that dust!
+
+
+
+
