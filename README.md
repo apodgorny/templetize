@@ -33,12 +33,14 @@ License: MIT
 
 2a. Alternatively, you can use pre-defined or your own macros:
 
+```javascript
 <b>I have <?= this.things.length ?> different <?=this.item_name?>s:</b>
 <ul>
 	<? FOR var n=0; n<this.things.length; n++ : ?>
 		<li><?= n+1 ?>) <?= this.things[n]; ?></li>
 	<? ENDFOR; ?>
 </ul>
+```
 
 3. Render template
 
